@@ -12,7 +12,7 @@
 	Typography
 	Elements [Forms, buttons etc..]
 	Other Plugins
-	
+
 [/Table of contents]
 -------------------------------------------------------------------*/
 .primary-font,
@@ -3226,6 +3226,13 @@ footer .gallery .gallery-item img {
   height: 2px;
   background-color: #222222;
 }
+.heading-section .line-dec2 {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  width: 60px;
+  height: 2px;
+  background-color: #222222;
+}
 .heading-section-2 h2 {
   font-family: 'Montserrat', sans-serif;
   margin-top: 0px;
@@ -3386,7 +3393,7 @@ footer .gallery .gallery-item img {
   margin-top: 30px;
   width: 80%;
 }
-/* 
+/*
  * 	Core Owl Carousel CSS File
  *	v1.3.3
  */
@@ -3702,7 +3709,7 @@ footer .gallery .gallery-item img {
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * Contributing author: Tyler Smith (@mbmufffin)
- * 
+ *
  */
 /* ====================================================================================================================
  * FONT-FACE
