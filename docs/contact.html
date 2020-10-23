@@ -85,7 +85,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 text-center">
-                <h1>お問い合わせフォーム</h1>
+                <h3 style="color: #FFFFFF;">お問い合わせフォーム</h3>
                 <div class="line"></div>
                 <span></span>
                 <div class="page-active">
@@ -100,29 +100,37 @@
           </div>
         </div>
 
-        <section class="blog-news">
+        <div class="contact-form">
           <div class="container">
             <div class="row">
-              <div class="col-md-10 col-md-offset-1">
-                <table class="tbl-r02">
-                  <tr>
-                    <th>お名前</th>
-                    <td>0円</td>
-                  </tr>
-                  <tr>
-                    <th>会社名</th>
-                    <td>129,000円</td>
-                  </tr>
-                  <tr class="last">
-                    <th>内訳（1ヶ月あたり）</th>
-                    <td></td>
-                  </tr>
-                </table>
-
+              <div class="col-md-8 col-md-offset-2">
+                <div class="contact-form">
+                  <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-12 col-xs-12">
+                        <input type="text" class="name" name="s" placeholder="お名前" value="">
+                      </div>
+                      <div class="col-md-6 col-sm-12 col-xs-12">
+                        <input type="text" class="email" name="s" placeholder="メールアドレス" value="">
+                      </div>
+                      <div class="col-md-6 col-sm-12 col-xs-12">
+                        <input type="text" class="phone" name="s" placeholder="電話番号" value="">
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <textarea id="message" class="message" name="message" placeholder="問い合わせ内容"></textarea>
+                      </div>
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="advanced-button">
+                          <a href="#">送信<i class="fa fa-paper-plane"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
 
         <section class="clients">
