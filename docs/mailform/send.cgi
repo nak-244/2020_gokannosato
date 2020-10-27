@@ -24,26 +24,26 @@ $conf{'spam_message'} = 'スパム行為の可能性があるため、送信で�
 $conf{'sendmail'} = '/usr/lib/sendmail';
 
 #06.設置者のアドレス(カンマ区切り)
-$conf{'mailto'} = 'info-he@olp.co.jp,tsuyoshi.nakamura@openloop.co.jp';
+$conf{'mailto'} = 't09024656860@gmail.com';
 
 #07.送信完了時にリダイレクトするサンクスページ
 $conf{'thanks'} = '../thanks.html';
 
 #08.設置者に届くメールの件名
-$conf{'subject'} = '【HE】ホームページからお問い合わせ';
+$conf{'subject'} = '【五感の里】ホームページからお問い合わせ';
 
 #09.送信者に届くメールの件名
-$conf{'res_subject'} = 'ヒバライエンジン - お問い合わせ受け付けました。';
+$conf{'res_subject'} = '五感の里 - お問い合わせ受け付けました。';
 
 #10.送信者に届くメールの本文
 $conf{'res_body'} = <<'__res_body_eof__';
-この度は　hibarai Engine（ヒバライエンジン）　に関するお問い合わせをいただき、誠にありがとうございます。
+この度は五感の里ホームページよりお問い合わせをいただき、誠にありがとうございます。
 内容を確認させていただき、改めて担当者よりご連絡をさせていただきます。
 
 尚、3営業日経過しても返信がなかった場合、お手数おかけいたしますが改めてお問い合わせフォームを送信いただきますよう、お願い申し上げます。
 
-■hibarai Engine お問い合わせフォーム
-https://www.olp.co.jp/hibaraiengine/counseling.html
+■五感の里 お問い合わせフォーム
+http://www.gokannosato.com/contact.html
 
 ─ご送信内容の確認─────────────────
 <resbody>
@@ -54,11 +54,12 @@ https://www.olp.co.jp/hibaraiengine/counseling.html
 
 この度はお問い合わせ重ねてお礼申し上げます。
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-　株式会社オープンループパートナーズ／　hibarai Engine　
-　〒160-0022
-　東京都新宿区新宿四丁目3番17号 FORECAST新宿SOUTH7階
-　TEL / 03-5368-3789
-　https://www.olp.co.jp/hibaraiengine/
+　グループホーム五感の里
+　運営会社：株式会社ジャパンエクシード
+　〒367-0051
+　埼玉県本庄市本庄1－1－7
+　TEL / 0495-23-3829
+　http://www.gokannosato.com/
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 __res_body_eof__
 
