@@ -2720,6 +2720,9 @@ footer .gallery .gallery-item img {
 #side-bar .tags ul li a:hover {
   color: #f4c23d;
 }
+#tophero {
+  margin-top: 110px;
+}
 #side-bar .sidebar-widget h4 {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -2735,6 +2738,7 @@ footer .gallery .gallery-item img {
   background-repeat: no-repeat;
   padding-top: 80px;
 }
+
 #page-heading h1 {
   margin: 0px;
   font-family: 'Montserrat', sans-serif;
