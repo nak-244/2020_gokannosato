@@ -3823,3 +3823,22 @@ html[xmlns] .flexslider .slides {
      width: 100%;
    }
  }
+
+ /* pc・スマホ表示切り替え */
+ .pc {
+   display: block !important;
+ }
+
+ .sp {
+   display: none !important;
+ }
+
+ @media only screen and (max-width: 750px) {
+   .pc {
+     display: none !important;
+   }
+
+   .sp {
+     display: block !important;
+   }
+ }

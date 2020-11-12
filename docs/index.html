@@ -83,16 +83,34 @@
           </div>
         </header>
 
-        <div class="jumbotron jumbotron-extend">
+        <div class="container-fluid pc">
+          <div class="row">
+            <div class="col no-gutters" style="padding:40px 0 0 0;">
+              <img class="img-fluid" src="assets/img/top_bg00.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid sp">
+          <div class="row">
+            <div class="col no-gutters" style="padding:110px 0 0 0;">
+              <img class="img-fluid" src="assets/img/top_bg01sp.jpg">
+            </div>
+          </div>
         </div>
 
         <style>
-          .jumbotron-extend {
-            position: relative;
-            height: 100vh;
-            min-height: 300px;
-            background: url(assets/img/top_bg01.jpg) no-repeat center center;
-            background-size: cover;
+        .img-fluid {
+          width: 100%;
+        }
+          .no-gutters {
+            margin: 0;
+            padding: 0;
+          }
+
+          .no-gutters>.col,
+          .no-gutters>[class*="col-"] {
+            margin: 0;
+            padding: 0;
           }
         </style>
 
