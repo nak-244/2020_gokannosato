@@ -20,8 +20,7 @@ $conf{'spam_url_block'} = 1;
 $conf{'spam_message'} = 'スパム行為の可能性があるため、送信できません。<br />送信内容にURLを含める事はできません。';
 
 #04.sendmailのパス(サーバ会社へお問い合わせ下さい)
-# $conf{'sendmail'} = '/usr/sbin/sendmail';
-$conf{'sendmail'} = '/usr/lib/sendmail';
+$conf{'sendmail'} = '/usr/sbin/sendmail';
 
 #06.設置者のアドレス(カンマ区切り)
 $conf{'mailto'} = 't09024656860@gmail.com';
@@ -49,8 +48,7 @@ http://www.gokannosato.com/contact.html
 <resbody>
 ──────────────────────────
 
-このメールに心当たりの無い場合は、お手数ですが
-下記連絡先までお問い合わせください。
+このメールに心当たりの無い場合は、お手数ですが下記連絡先までお問い合わせください。
 
 この度はお問い合わせ重ねてお礼申し上げます。
 ━━━━━━━━━━━━━━━━━━━━━━━━━━

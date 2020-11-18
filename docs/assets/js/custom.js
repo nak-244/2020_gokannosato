@@ -46,7 +46,7 @@ jQuery(document).ready(function ($) {
 		    controlNav: "thumbnails"
 		  });
 		});
-		
+
 
 
 		// Accordion script
@@ -54,22 +54,22 @@ jQuery(document).ready(function ($) {
         $('.accordion .accordion-section-title').removeClass('active');
         $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
 	    }
-	 
+
 	    $('.accordion-section-title').click(function(e) {
 	        // Grab current anchor value
 	        var currentAttrValue = $(this).attr('href');
-	 
+
 	        if($(e.target).is('.active')) {
 	            close_accordion_section();
 	        }else {
 	            close_accordion_section();
-	 
+
 	            // Add active class to section title
 	            $(this).addClass('active');
 	            // Open up the hidden content panel
-	            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+	            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
 	        }
-	 
+
 	        e.preventDefault();
 	    });
 
@@ -77,17 +77,17 @@ jQuery(document).ready(function ($) {
 	    // Tabs script
 	    jQuery('.tabs .tab-links a').on('click', function(e)  {
 	        var currentAttrValue = jQuery(this).attr('href');
-	 
+
 	        // Show/Hide Tabs
 	        jQuery('.tabs ' + currentAttrValue).fadeIn(500).siblings().hide();;
-	 
+
 	        // Change/remove current tab to active
 	        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
-	 
+
 	        e.preventDefault();
 	    });
 
-		// Animation on scroll 
+		// Animation on scroll
 		new WOW().init();
 
 
@@ -141,9 +141,9 @@ jQuery(document).ready(function ($) {
 		// Owl Carouse Testimonials
 
 		var owl = $("#owl-demo");
- 
+
 		  owl.owlCarousel({
-      		
+
       		pagination : false,
     		paginationNumbers: false,
       		autoPlay: 3000, //Set AutoPlay to 3 seconds
@@ -153,10 +153,10 @@ jQuery(document).ready(function ($) {
 		    itemsTablet: [600,1], //2 items between 600 and 0
 		    itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
 		  });
-		 
+
 
 		var owl = $("#owl-testimonials");
- 
+
 		  owl.owlCarousel({
       		navigation : false,
     		navigationText : ["prev","next"],
@@ -169,7 +169,7 @@ jQuery(document).ready(function ($) {
 		    itemsTablet: [600,1], //2 items between 600 and 0
 		    itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
 		  });
-		 
+
 		  // Custom Navigation Events
 		  $(".next").on('click' ,function(){
 		    owl.trigger('owl.next');
@@ -203,7 +203,7 @@ jQuery(document).ready(function ($) {
         //     $(this).children('ul').stop(true, true).slideUp(200);
         // });
 
-		
+
 		$('nav.main-navigation > ul > li').each(function(){
 			$(this).find('.has-submenu').append('<i class="fa fa-angle-down"></i>');
 		});
@@ -212,25 +212,25 @@ jQuery(document).ready(function ($) {
         // Blog Masonry
         var blogIsotope=function(){
             var imgLoad = imagesLoaded($('.blog-isotope'));
-		   
+
             imgLoad.on('done',function(){
 
                 $('.blog-isotope').isotope({
                     "itemSelector": ".blog-post",
                 });
-               
+
             })
-           
+
            imgLoad.on('fail',function(){
 
                 $('.blog-isotope').isotope({
                     "itemSelector": ".blog-post",
                 });
 
-           })  
-           
+           })
+
         }
-                   
+
         blogIsotope();
 
 
@@ -249,29 +249,29 @@ jQuery(document).ready(function ($) {
 		var offcanvas_from_left = false;
 
 		function offcanvas_right() {
-			
+
 			$(".sidebar-menu-container").addClass("slide-from-left");
-			$(".sidebar-menu-container").addClass("sidebar-menu-open");		
-			
+			$(".sidebar-menu-container").addClass("sidebar-menu-open");
+
 			offcanvas_open = true;
 			offcanvas_from_left = true;
-			
+
 			$(".sidebar-menu").addClass("open");
 			$("body").addClass("offcanvas_open offcanvas_from_left");
 
 			$(".nano").nanoScroller();
-			
+
 		}
 
 		function offcanvas_close() {
 			if (offcanvas_open === true) {
-					
+
 				$(".sidebar-menu-container").removeClass("slide-from-left");
 				$(".sidebar-menu-container").removeClass("sidebar-menu-open");
-				
+
 				offcanvas_open = false;
 				offcanvas_from_left = false;
-				
+
 				//$('#sidebar-menu-container').css('max-height', 'inherit');
 				$(".sidebar-menu").removeClass("open");
 				$("body").removeClass("offcanvas_open offcanvas_from_left");
@@ -306,10 +306,10 @@ jQuery(document).ready(function ($) {
 
 	    $(".responsive-menu").on("click", ".show-submenu", function(e) {
 			e.stopPropagation();
-			
+
 			$(this).parent().toggleClass("current")
 							.children(".sub-menu").toggleClass("open");
-							
+
 			$(this).html($(this).html() == '<i class="fa fa-chevron-circle-down"></i>' ? '<i class="fa fa-chevron-circle-up"></i>' : '<i class="fa fa-chevron-circle-down"></i>');
 			$(".nano").nanoScroller();
 		});
@@ -369,7 +369,7 @@ jQuery(document).ready(function ($) {
 		//hide or show the "back to top" link
 		$(window).on('scroll', function(){
 			( $(this).scrollTop() > offset ) ? $back_to_top.addClass('go-top-visible') : $back_to_top.removeClass('go-top-visible go-top-fade-out');
-			if( $(this).scrollTop() > offset_opacity ) { 
+			if( $(this).scrollTop() > offset_opacity ) {
 				$back_to_top.addClass('go-top-fade-out');
 			}
 		});
@@ -383,7 +383,7 @@ jQuery(document).ready(function ($) {
 			);
 		});
 
-		
-		
+
+
 
 });
