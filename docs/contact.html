@@ -106,23 +106,33 @@
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
                 <div class="contact-form">
-                    <form id="contact_form" method="post" action="mailform/send.cgi" onsubmit="return sendmail(this);">
+                  <form id="contact_form" method="post" action="mailform/send.cgi" onsubmit="return sendmail(this);">
                     <div class="row">
                       <div class="col-md-6 col-sm-12 col-xs-12">
-                        <input type="text" class="name" name="お名前(必須)" placeholder="お名前" value="">
+                        <input type="text" class="name" name="お名前(必須)" placeholder="お名前">
                       </div>
                       <div class="col-md-6 col-sm-12 col-xs-12">
-                        <input type="text" class="email" name="email(必須)" placeholder="メールアドレス" value="">
+                        <input type="text" class="email" name="email(必須)" placeholder="メールアドレス">
                       </div>
                       <div class="col-md-6 col-sm-12 col-xs-12">
-                        <input type="text" class="phone" name="電話番号(必須)" placeholder="電話番号" value="">
+                        <input type="text" class="phone" name="電話番号(必須)" placeholder="電話番号">
+                      </div>
+                      <div class="col-md-6 col-sm-12 col-xs-12">
+                        <select name="問い合わせ先(必須)" class="custom-select">
+                          <option value="" selected>▼問い合わせ先を選んでください▼</option>
+                          <option value="五感の里　岡部">五感の里　岡部</option>
+                          <option value="五感の里　本庄早稲田">五感の里　本庄早稲田</option>
+                          <option value="五感の里　深谷">五感の里　深谷</option>
+                          <option value="五感の里　のぞみ【上尾】">五感の里　のぞみ【上尾】</option>
+                          <option value="五感の里　花みずき【鳩山】">五感の里　花みずき【鳩山】</option>
+                        </select>
                       </div>
                       <div class="col-md-12 col-sm-12 col-xs-12">
-                        <textarea id="message" class="お問い合わせ内容(必須)" name="message" placeholder="問い合わせ内容"></textarea>
+                        <textarea class="message" name="問い合わせ内容(必須)" placeholder="問い合わせ内容"></textarea>
                       </div>
                       <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="advanced-button">
-                          <input type="submit" value="送信する" style="padding-left: 0;background-color:#f4c23d;color:#FFFFFF;"/>
+                          <input type="submit" value="送信する" style="padding-left: 0;background-color:#f4c23d;color:#FFFFFF;" />
                         </div>
                       </div>
                     </div>
@@ -263,7 +273,7 @@
 
   <script type="text/javascript" src="assets/js/plugins.js"></script>
   <script type="text/javascript" src="assets/js/custom.js"></script>
-
+  <script type="text/javascript" src="mailform/mailform.js" charset="utf-8"></script>
 </body>
 
 </html>
