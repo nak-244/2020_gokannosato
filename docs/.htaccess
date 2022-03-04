@@ -9,3 +9,6 @@ RewriteRule ^(.*)$ http://www.%1/$1 [R=301,L]
 RewriteEngine on
 RewriteCond %{HTTP_HOST} (.+)$ [NC]
 RewriteRule ^(.*)index.html$ http://%1/$1 [R=301,L]
+
+RewriteEngine On
+RewriteRule ^(.*)$ https://ygood.jp/
